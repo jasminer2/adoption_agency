@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <tittle>Adopton agency</tittle>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <tittle>Adopton agency</tittle>
-    <h1>My name is jasmine</h1>
-  </head>
-  <body>
-    
-  </body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Pet Adoption Center</h1>
+            <nav>
+                <ul>
+                    <li><a href="#pets">Available Pets</a></li>
+                    <li><a href="#adopt-form">Adopt a Pet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <section id="pets">
+        <h2>Available Pets for Adoption</h2>
+        <div class="pet-list">
+            <div class="pet-card">
+                <img src="cat.jpg" alt="Cat" class="pet-image">
+                <h3>Whiskers (Cat)</h3>
+                <p>Age: 2 years</p>
+                <p>Friendly and playful. Loves cuddles!</p>
+            </div>
+            <div class="pet-card">
+                <img src="dog.jpg" alt="Dog" class="pet-image">
+                <h3>Buddy (Dog)</h3>
+                <p>Age: 3 years</p>
+                <p>Energetic and loves outdoor activities!</p>
+            </div>
+            <!-- Add more pets as needed -->
+        </div>
+    </section>
+
+    <section id="adopt-form">
+        <h2>Adopt a Pet</h2>
+        <form id="adoption-form" action="submit-form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pet">Pet to Adopt</label>
+                <select id="pet" name="pet" required>
+                    <option value="whiskers">Whiskers (Cat)</option>
+                    <option value="buddy">Buddy (Dog)</option>
+                    <!-- Add more pet options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Why do you want to adopt this pet?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Adoption Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Center | Contact us: info@petadoptioncenter.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
