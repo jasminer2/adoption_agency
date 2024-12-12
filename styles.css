@@ -15,7 +15,7 @@ header {
     border-bottom: 3px solid #fff;
 }
 
-.navbar {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
