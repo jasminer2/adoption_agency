@@ -30,16 +30,19 @@ header {
 }
 
 nav ul {
+    text-align: center;
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
 nav ul li {
+    text-align: center;
     display: inline;
 }
 
 nav ul li a {
+    text-align: center;
     color: white;
     text-decoration: none;
     font-weight: 500;
