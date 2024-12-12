@@ -15,23 +15,28 @@ header {
     border-bottom: 3px solid #fff;
 }
 
-.nav {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     padding: 0 20px;
+    width: 100%;
 }
 
 .navbar h1 {
-    text-align: center;
     font-size: 32px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-right: auto;
+    margin-right: 20px; 
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 nav ul {
-    text-align: center;
     list-style: none;
     display: flex;
     gap: 25px;
@@ -39,12 +44,10 @@ nav ul {
 }
 
 nav ul li {
-    text-align: center;
     display: inline;
 }
 
 nav ul li a {
-    text-align: center;
     color: white;
     text-decoration: none;
     font-weight: 500;
