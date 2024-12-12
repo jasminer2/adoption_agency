@@ -9,10 +9,10 @@ body {
 header {
     background-color: #4CA1AF; 
     color: white;
+    text-align: center;
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-bottom: 3px solid #fff; 
-    text-align: center;
 }
 
 .navbar h1 {
